@@ -1,3 +1,16 @@
+* {
+margin:0;
+padding:0;
+list-style:none;
+vertical-align:baseline;
+}
+
 body{
 	background-image: url(../images/bg.png);
 }
+#content{position: relative; width: 3000px; float: left}
+.fundo1, .fundo2m, .fundo3, .fundo4{position: absolute; height: 700px;}
+.fundo1{width: 644px; background-image: url(../images/fundo1.png); left:0;}
+.fundo2{width: 1010px; background-image: url(../images/fundo2.png); right:644px;}
+.fundo3{width: 642px; background-image: url(../images/fundo3.png); left:1654px;}
+.fundo4{width: 941px; background-image: url(../images/fundo4.png); left:2000px;}
