@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title></title>
+	<title>Debora Reinaldo - Noivas e Beleza</title>
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
 </head>
 <body>
 	<div id="content">
 		<div class="fundo1"></div>
 		<div class="fundo2"></div>
-		<!--<div class="fundo3"></div>
-		<div class="fundo4"></div>-->
+		<div class="fundo3"></div>
+		<div class="fundo4"></div>
+		<div id="area-home">
+			<div class="logo"></div>
+			<div class="saudacao">Seja bem vinda</div>
+			<div class="menu">
+				<a href="#">HOME</a>
+				<a href="#">SERVIÇOS</a>
+				<a href="#">PORTFÓLIOS</a>
+				<a href="#">DICAS</a>
+				<a href="#">EMPRESA</a>
+				<a href="#">CONTATO</a>
+			</div>
+			<div class="vitrine">
+				<img src="images/vitrine1.jpg">
+
+			</div>
+			<div class="chamada">Nós sabemos<br /> 
+				o quanto tudo precisa<br />
+				<span>ser perfeito</span></div>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['#content'],
+            {
+            height: 6000,
+            onScroll: function(percent) { 
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
 </body>
 </html>
