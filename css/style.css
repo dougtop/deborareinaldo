@@ -5,21 +5,22 @@ list-style:none;
 vertical-align:baseline;
 }
 
-body{
-	background-image: url(../images/bg.png);   overflow-x: hidden;
-}
+body{background-image: url(../images/bg.png);   overflow-x: hidden; font-family: 'caviar_dreamsbold', sans-serif; color:#50505a;}
 
-#content, .fundo1, .fundo2, .fundo3, .fundo4, #area-home{height: 685px;}
+#content, .fundo1, .fundo2, .fundo3, .fundo4, .fundo5 #area-home, #area-servicos{height: 685px;}
 
 #content{z-index: 1; width: 5000px; float: left; position: fixed; top: 0; left: 0;}
-.fundo1, .fundo2, .fundo3, .fundo4{position: absolute; background-repeat: no-repeat; }
+.titulo-area{font-family: 'asenineregular', sans-serif; font-size: 90px;  position: absolute; color:#826ebe; left: 75px; top:300px;
+-moz-transform: rotate(-47.5deg); -webkit-transform: rotate(-47.5deg); -o-transform: rotate(-47.5deg); -ms-transform: rotate(-47.5deg); transform: rotate(-47.5deg);}
 
+.fundo1, .fundo2, .fundo3, .fundo4, .fundo5{position: absolute; background-repeat: no-repeat; }
 .fundo1{width: 644px; background-image: url(../images/fundo1.png); left: 0;}
 .fundo2{width: 1010px; background-image: url(../images/fundo2.png); left: 876px;}
 .fundo3{width: 642px; background-image: url(../images/fundo3.png); left: 1654px;}
-.fundo4{width: 941px; background-image: url(../images/fundo4.png); left: 3000px;}
+.fundo4{width: 941px; background-image: url(../images/fundo2.png); left: 3250px;}
+.fundo5{width: 941px; background-image: url(../images/fundo4.png); left: 4000px;}
 
-#area-home{float:left; width: 1000px;}
+#area-home{float:left; width: 1800px;}
 .logo{width: 360px; height: 130px; position: absolute; background-image: url(../images/logo.png); left:50px; top:70px;}
 .saudacao, .chamada{font-family: 'tangerineregular', sans-serif; position: absolute; color: #826ebe}
 .saudacao{left:80px; top:300px; font-size: 50px;}
@@ -27,4 +28,20 @@ body{
 .chamada span{font-size: 130px;}
 .menu{height: 40px; width:1000px; padding-left: 620px; float: left; background-color: #fff; font-family: 'asenineregular', sans-serif;  }
 .menu a{float: left; padding: 10px 20px; color:#826eb4; text-decoration: none; font-size: 20px }
-.vitrine{float: left}
+.vitrine{float: left; z-index: -1}
+
+#area-servicos{float:left; width: 2000px;  position: relative}
+.titulo-servico{font-family: 'asenineregular', sans-serif; background-repeat: no-repeat; font-size: 60px; color: #826ebe; float: left; background-image: url(../images/split.png); padding-left: 60px; margin: 20px 500px 0 500px }
+.coluna1{width:1000px;float: left}
+.pacote1{width:500px; float: left; margin: 30px 0 0 500px;}
+.pacote2{width:700px; float: left; margin: 30px 0 0 300px;}
+.pacote3{width:700px; float: left; margin: 30px 0 0 50px;}
+.titulo-pacote{padding: 5px 10px; width: 395px;  float: left; height: 28px; background-image: url(../images/titulo_pacote.png); float: left; font-size: 25px; color:#7364aa;}
+.grupo-itens{width:100%; float:left; margin-top: 10px; font-size: 15px;}
+.valor{font-size: 18px; text-align: right; float: right; color: #fff; margin-right: 10px}
+.tag{width: 112px; float: left; font-size: 20px; color: #826ebe; text-align: right; margin-right: 10px}
+.itens-pacote{float: left; border-left: 2px solid #826ebe; padding-left: 10px  }
+.pacote1 .itens-pacote{width: 365px;}
+.pacote2 .itens-pacote, .pacote3 .itens-pacote{width: 565px;}
+.obs{font-size: 12px;}
+.informacao-extra{width:450px;float: left; font-size: 12px; margin-top: 50px}
