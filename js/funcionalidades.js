@@ -31,7 +31,7 @@ $(document).ready(function()
 			$(".box-dica1, .box-dica2, .box-dica3").fadeOut().css("display" , "none");
 			$(".artigo3").fadeIn().css("display" , "block");
 		});
-		$(".btn-voltar").click(function() {
+		$(".btn-voltar, .fechar-artigo").click(function() {
 			$(".artigo1, .artigo2, .artigo3").fadeOut().css("display" , "none");
 			$(".box-dica1, .box-dica2, .box-dica3").fadeIn().css("display" , "block");
 		});
