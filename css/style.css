@@ -1,7 +1,7 @@
 
 /* COMUM */
 * {margin:0; padding:0; list-style:none; vertical-align:baseline;}
-body{height: 685px;  width: 9010px; background-image: url(../images/bg.png); font-family: 'asenineregular', sans-serif; color:#282832; letter-spacing: 1px;}
+body{height: 685px; overflow-y:hidden;  width: 9010px; background-image: url(../images/bg.png); font-family: 'asenineregular', sans-serif; color:#282832; letter-spacing: 1px;}
 #camada1, #camada2, #camada3, #area-home, #area-servicos, #area-portfolio, #area-dicas, #area-empresa, #area-contato{height: 685px;}
 #camada1, #camada2, #camada3{overflow-x: hidden; width: 9010px; position: absolute; top: 0; left: 0;}
 #camada1{z-index: 2;}
@@ -70,7 +70,7 @@ transition: background 0.2s ease-in;}
 .coluna-album a{position: relative; float: left;}
 .img-sub{opacity: 0; margin: 10px 5%; width: 90%; height:110px; background-position: center center;  z-index: 100; position: absolute; top: 0; left: 0}
 .img-sub:hover{background-image: url(../images/lupa_portfolio.png); opacity: 1; -webkit-transition: opacity 0.3s ease-in-out; -moz-transition: opacity 0.3s ease-in-out; -ms-transition: opacity 0.3s ease-in-out; -o-transition: opacity 0.3s ease-in-out; transition: opacity 0.3s ease-in-out;}
-.album1, .album2, .album3{display:none; padding: 8px; float: left;  background-color: #fff; -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3); box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3); }
+.album1, .album2, .album3{display:none; height: 528px; padding: 8px; float: left;  background-color: #fff; -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3); box-shadow: 0 2px 2px 0 rgba(0,0,0,0.3); }
 .album1{display:block;}
 .titulo-album{position:absolute; bottom:6px; color:#fff; left:0; padding:4px 10px; background-color: rgba(90, 50, 150, 0.7);}
 #area-portfolio .btn-navegacao{right:275px;}
