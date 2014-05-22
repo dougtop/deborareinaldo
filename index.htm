@@ -16,9 +16,9 @@
   js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.0";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	<div id="camada1">
 		<div id="area-home">
-			<div class="fb-share-button" data-href="http://css3generator.com/" data-type="button"></div>
 			<div class="logo"></div>
 			<div class="saudacao">Seja bem vinda</div>
 			 	<ul class="nav">
@@ -454,7 +454,7 @@
 		<div id="area-contato">
 
 			<div class="titulo-area">CONTATO</div>
-				<form class="form-contato">
+				<form class="form-contato" method="POST" action="formmail.php">
 					<label>NOME:</label>
 					<input type="text" name="nome">
 					<label>E-MAIL:</label>
@@ -462,22 +462,26 @@
 					<label>TELEFONE:</label>
 					<input type="text" name="telefone">
 					<label>MENSAGEM:</label>
-					<textarea rows="6" cols="30">
+					<textarea rows="6" cols="30" name="campomensagem">
 					</textarea>
-					<input type="submit">
+					<input type="submit" value="Enviar" name="enviar">
 				</form>
 				<div class="titulo-tel">
 					<img src="images/telefone.png"> TELEFONE 
 				</div>
-				<div class="tel">(21) 97873-4756 ou (21) 95465-4756</div>
+				<div class="tel">(21) 2290-3156 ou (21) 98871-3960</div>
 				<div class="infos-extras">
-					<a href=""><img src="images/icon_facebook.png"></a>
-					<a href=""><img src="images/icon_twitter.png"></a>
+					<a href="#" onclick="window.open(
+			    'https://www.facebook.com/sharer/sharer.php?u=http://www.deborareinaldo.com.br', 
+			    'facebook-share-dialog', 'width=626,height=436'); return false;">
+			    <img src="images/icon_facebook.png">
+		    </a>
+					<a href="https://twitter.com/intent/tweet?text=Visitei o site Debora Reinaldo e adorei os trabalhos no portfólio. Vale a pena conferir! http://www.deborareinaldo.com.br/" data-lang="br"><img src="images/icon_twitter.png"></a>
 					<span>Compartilhe:</span>
 					<img src="images/icon_american.png">
 					<img src="images/icon_master.png">
 					<img src="images/icon_visa.png">
-					<span>Aceitamos:</span>
+					<span>Formas de pagamento: à vista ou nos cartões:</span>
 				</div>
 				<div class="btn-navegacao">
 					<a href="#area-empresa" class="btn-anterior">Anterior</a>
