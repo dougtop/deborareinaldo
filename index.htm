@@ -455,6 +455,10 @@
 
 			<div class="titulo-area">CONTATO</div>
 				<form class="form-contato" method="POST" action="formmail.php">
+				    <input type="hidden" name="recipient" value="contato@deborareinaldo.com.br">
+    				<input type="hidden" name="redirect" value="http://www.deborareinaldo.com.br/">
+    				<input type="hidden" name="subject" value="E-mail do site">
+    				<input type="hidden" name="email" value="deborareinaldo.noivas@gmail.com">
 					<label>NOME:</label>
 					<input type="text" name="nome">
 					<label>E-MAIL:</label>
@@ -462,9 +466,9 @@
 					<label>TELEFONE:</label>
 					<input type="text" name="telefone">
 					<label>MENSAGEM:</label>
-					<textarea rows="6" cols="30" name="campomensagem">
+					<textarea rows="6" cols="30" name="mensagem">
 					</textarea>
-					<input type="submit" value="Enviar" name="enviar">
+					<input type="submit" value="Enviar" name="btnEnviar">
 				</form>
 				<div class="titulo-tel">
 					<img src="images/telefone.png"> TELEFONE 
@@ -501,20 +505,46 @@
 		<div class="fundo9"></div>
 	</div>
 	<div id="camada3">
-		<div class="vitrine">
-			<img src="images/vitrine/vitrine1.jpg">
+		<div id="owl-demo" class="owl-carousel owl-theme">
+		  <div class="item"><img src="images/vitrine/img1.jpg" alt=""></div>
+		  <div class="item"><img src="images/vitrine/img2.jpg" alt=""></div>
+		  <div class="item"><img src="images/vitrine/img3.jpg" alt=""></div>
+		  <div class="item"><img src="images/vitrine/img4.jpg" alt=""></div>
 		</div>
+		<!--<div class="vitrine">
+			<img src="images/vitrine/vitrine1.jpg">
+		</div>-->
 		<div class="faixa-nav"></div>
 		<div class="fundo-empresa"></div> 
 	</div>
 	<div id="camada-scroll" style="position: fixed; width:9010px; background-color: #f00; height:20px; top: 0; left: 0; overflow-x: hidden; display:none"></div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/funcionalidades.js"></script>
-    <script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script>-->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+	<script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
+    	$(document).ready(function() {
+ 
+  			$("#owl-demo").owlCarousel({
+ 
+		      navigation : true, // Show next and prev buttons
+		      slideSpeed : 300,
+		      paginationSpeed : 400,
+		      singleItem:true,
+		      autoPlay:true
+		 
+		      // "singleItem:true" is a shortcut for:
+		      // items : 1, 
+		      // itemsDesktop : false,
+		      // itemsDesktopSmall : false,
+		      // itemsTablet: false,
+		      // itemsMobile : false
+		  	});
+		});
         $(function() {
             $('ul.nav a, .btn-navegacao a').bind('click',function(event){
                 var $anchor = $(this);
@@ -531,18 +561,15 @@
                 event.preventDefault();
             });
         });
+	    /*(function($) {
+	        $.jInvertScroll(['#camada-scroll'],
+	            {
+	            height: 9010,
+	            onScroll: function(percent) { 
+	                console.log(percent);
+	            }
+	        });
+	    }(jQuery));*/
     </script>
-        <script type="text/javascript">
-    (function($) {
-        $.jInvertScroll(['#camada-scroll'],
-            {
-            height: 9010,
-            onScroll: function(percent) { 
-                console.log(percent);
-            }
-        });
-    }(jQuery));
-    </script>
-
 </body>
 </html>

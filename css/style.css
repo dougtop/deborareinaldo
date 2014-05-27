@@ -1,7 +1,8 @@
 
 /* COMUM */
 * {margin:0; padding:0; list-style:none; vertical-align:baseline;}
-body{height: 685px; overflow-y:hidden;  width: 9010px; background-image: url(../images/bg.png); font-family: 'asenineregular', sans-serif; color:#282832; letter-spacing: 1px;}
+body{height: 685px; overflow-y:hidden;  width: 9010px; background-image: url(../images/bg.png); font-family: 'asenineregular', sans-serif; color:#14141e; letter-spacing: 1px;}
+input [type="submit"]{cursor: pointer}
 #camada1, #camada2, #camada3, #area-home, #area-servicos, #area-portfolio, #area-dicas, #area-empresa, #area-contato{height: 685px;}
 #camada1, #camada2, #camada3{overflow-x: hidden; width: 9010px; position: absolute; top: 0; left: 0;}
 #camada1{z-index: 2;}
@@ -154,6 +155,11 @@ transition: background 0.2s ease-in;}
 
 /* CAMADA 3 */
 
-.vitrine{float: left; height: 645px; width: 1520px; background-color: #fff; padding-top: 40px;}
+#owl-demo{float: left; height: 645px; width: 1480px; background-color: #fff; padding: 40px 40px 0 0;}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .faixa-nav{z-index: -1; -webkit-box-shadow:inset 0 0 1px 1px rgba(0,0,0,0.1); box-shadow:inset 0 0 1px 1px rgba(0,0,0,0.1); background-color: #fff; width: 100%; position: absolute; bottom: 0; height:32px;}
 .fundo-empresa{background-color: #fff; z-index: 0; position: absolute; width: 2500px; height: 685px; right: 0}
